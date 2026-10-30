@@ -1,0 +1,40 @@
+# Dependencies
+node_modules/
+*/node_modules/
+.pnpm-store/
+
+# Environment Variables
+.env
+.env.*
+*.env
+Backend/.env
+Frontend/.env
+Frontend/.env.local
+
+# Next.js build
+.next/
+*/.next/
+Frontend/.next/
+Frontend/out/
+
+# Backend build
+dist/
+Backend/dist/
+Backend/build/
+
+# Database and SQLite / PGlite artifacts
+pglite-debug.log
+*.log
+*.sqlite
+*.sqlite3
+
+# OS and Cache files
+.DS_Store
+Thumbs.db
+.turbo/
+.cache/
+
+# IDE and Editor
+.vscode/
+.idea/
+.agent/

@@ -1,0 +1,1527 @@
+{
+  "timestamp": "2026-10-29T09:03:55.495Z",
+  "counts": {
+    "adminUsers": 1,
+    "categories": 7,
+    "courses": 8,
+    "siteSettings": 1,
+    "faqs": 7,
+    "testimonials": 3,
+    "facultyProfiles": 4,
+    "enquiries": 22,
+    "enquiryMessages": 5,
+    "emailNotifications": 18
+  },
+  "data": {
+    "adminUsers": [
+      {
+        "id": "7917d89e-30a0-4552-a848-c5ff5676ce9f",
+        "email": "admin@vlearnn.com",
+        "passwordHash": "$2a$10$sTglhK0pX33dWYET7TY09OurSYGiq.PHv6MiJWrWqXF0mET60OxKG",
+        "name": "VLEARNN Master Administrator",
+        "role": "SUPER_ADMIN",
+        "lastLoginAt": "2026-10-29T07:51:53.825Z",
+        "isActive": true,
+        "createdAt": "2026-10-29T04:32:11.634Z",
+        "updatedAt": "2026-10-29T07:51:53.829Z"
+      }
+    ],
+    "categories": [
+      {
+        "id": "0bc168a3-cdd6-4deb-8c5f-e8398d6cf074",
+        "name": "Artificial Intelligence & ML",
+        "slug": "artificial-intelligence",
+        "description": "Deep learning, natural language processing, vector databases, transformer architectures, and production LLM engineering.",
+        "displayOrder": 1,
+        "createdAt": "2026-10-29T04:32:11.641Z",
+        "updatedAt": "2026-10-29T05:09:10.782Z"
+      },
+      {
+        "id": "9849eb1a-6a27-4ab1-95e4-a8df4bceca9e",
+        "name": "Full Stack Web Engineering",
+        "slug": "full-stack-development",
+        "description": "Production TypeScript, Next.js, Node.js microservices, relational databases, caching, and clean architecture.",
+        "displayOrder": 2,
+        "createdAt": "2026-10-29T04:32:11.650Z",
+        "updatedAt": "2026-10-29T05:09:10.786Z"
+      },
+      {
+        "id": "c92f7e52-2963-436b-8cf6-d089d47ebcfb",
+        "name": "Cloud & DevOps Engineering",
+        "slug": "cloud-devops",
+        "description": "Kubernetes orchestration, Terraform infrastructure-as-code, CI/CD automated pipelines, and cloud reliability.",
+        "displayOrder": 3,
+        "createdAt": "2026-10-29T04:32:11.652Z",
+        "updatedAt": "2026-10-29T05:09:10.788Z"
+      },
+      {
+        "id": "3429e1df-c35b-4201-86bf-5eabb8f3734b",
+        "name": "Data Analytics & Engineering",
+        "slug": "data-analytics",
+        "description": "Modern analytics engineering, SQL mastery, Python data wrangling, dbt modeling, and enterprise business intelligence.",
+        "displayOrder": 4,
+        "createdAt": "2026-10-29T04:32:11.653Z",
+        "updatedAt": "2026-10-29T05:09:10.789Z"
+      },
+      {
+        "id": "e905fb24-45b9-42e0-91da-c385b3f1479f",
+        "name": "Cybersecurity & InfoSec",
+        "slug": "cybersecurity",
+        "description": "Defensive security architecture, penetration testing, security operations, vulnerability assessment, and threat hunting.",
+        "displayOrder": 5,
+        "createdAt": "2026-10-29T04:32:11.654Z",
+        "updatedAt": "2026-10-29T05:09:10.791Z"
+      },
+      {
+        "id": "645818b1-892b-4cf1-aa9c-445c7153fc38",
+        "name": "Python & Automation Systems",
+        "slug": "python-automation",
+        "description": "Idiomatic Python programming, asynchronous processing, system utilities, web scraping, and API integrations.",
+        "displayOrder": 6,
+        "createdAt": "2026-10-29T04:32:11.656Z",
+        "updatedAt": "2026-10-29T05:09:10.792Z"
+      },
+      {
+        "id": "2e06a0bf-5956-4239-ac4b-2a8a109f85c2",
+        "name": "Sample category",
+        "slug": "sample-category",
+        "description": "zsdfasdf",
+        "displayOrder": 7,
+        "createdAt": "2026-10-29T07:12:32.261Z",
+        "updatedAt": "2026-10-29T07:12:32.261Z"
+      }
+    ],
+    "courses": [
+      {
+        "id": "b0484433-aced-4da9-910a-1f222098ba68",
+        "title": "Cloud Infrastructure, Kubernetes & DevOps Engineering",
+        "slug": "cloud-devops",
+        "summary": "Automate, containerize, and operate resilient cloud infrastructures using Docker, Kubernetes, Terraform IaC, GitHub Actions, and AWS cloud services.",
+        "description": "Modern software engineering requires continuous delivery and operational resilience. In this course, you will build and provision reproducible cloud environments from code, manage multi-node Kubernetes clusters, deploy ingress controllers, configure automated CI/CD pipelines, and monitor distributed applications with Prometheus and Grafana.",
+        "categoryId": "c92f7e52-2963-436b-8cf6-d089d47ebcfb",
+        "duration": "14 Weeks (100 Hours)",
+        "learningMode": "ONLINE",
+        "fees": 38000,
+        "isFeatured": true,
+        "isPublished": true,
+        "isArchived": false,
+        "eligibility": "Basic familiarity with Linux shell commands and basic web networking principles (TCP/IP, DNS, ports).",
+        "displayOrder": 3,
+        "createdAt": "2026-10-29T04:32:11.691Z",
+        "updatedAt": "2026-10-29T05:09:10.831Z",
+        "modules": [
+          {
+            "id": "3e02d446-75b6-4239-8bf2-01124f3a953e",
+            "courseId": "b0484433-aced-4da9-910a-1f222098ba68",
+            "title": "Module 1: Linux Systems & Containerization with Docker",
+            "description": "Linux systems administration, process isolation, namespaces, and multi-stage Docker builds.",
+            "topics": [
+              "Linux systems: Bash scripting, systemd, permissions, and network troubleshooting",
+              "Docker internals: Namespaces, cgroups, layered filesystem, and image optimization",
+              "Docker Compose for multi-container development environments",
+              "Container security, rootless containers, and vulnerability scanning with Trivy"
+            ],
+            "orderIndex": 1,
+            "durationHours": 25,
+            "createdAt": "2026-10-29T05:09:10.833Z",
+            "updatedAt": "2026-10-29T05:09:10.833Z"
+          },
+          {
+            "id": "38d7ec43-113b-4b7e-a556-56ea62bee991",
+            "courseId": "b0484433-aced-4da9-910a-1f222098ba68",
+            "title": "Module 2: Kubernetes Orchestration & Cluster Management",
+            "description": "Deploying and managing production workloads on Kubernetes.",
+            "topics": [
+              "Kubernetes architecture: Control plane, kubelet, etcd, and worker nodes",
+              "Pods, Deployments, ReplicaSets, StatefulSets, and DaemonSets",
+              "Services, Ingress controllers, TLS cert-manager, and internal DNS",
+              "ConfigMaps, Secrets, persistent volumes, and Helm package management"
+            ],
+            "orderIndex": 2,
+            "durationHours": 25,
+            "createdAt": "2026-10-29T05:09:10.833Z",
+            "updatedAt": "2026-10-29T05:09:10.833Z"
+          },
+          {
+            "id": "829d50df-ad83-404f-a799-3c139aa58868",
+            "courseId": "b0484433-aced-4da9-910a-1f222098ba68",
+            "title": "Module 3: Infrastructure as Code (IaC) with Terraform & AWS",
+            "description": "Provisioning reproducible enterprise cloud infrastructure on AWS.",
+            "topics": [
+              "AWS Core Services: VPC, Subnets, Internet Gateways, EC2, S3, and IAM roles",
+              "Terraform fundamentals: Providers, resources, state locking, and modularization",
+              "Managing remote state with S3 and DynamoDB backend",
+              "Zero-downtime rolling updates and disaster recovery planning"
+            ],
+            "orderIndex": 3,
+            "durationHours": 25,
+            "createdAt": "2026-10-29T05:09:10.834Z",
+            "updatedAt": "2026-10-29T05:09:10.834Z"
+          },
+          {
+            "id": "fe9d1d05-bc0e-4c55-88ba-ba458fd91c7b",
+            "courseId": "b0484433-aced-4da9-910a-1f222098ba68",
+            "title": "Module 4: CI/CD Pipelines & Cloud Observability",
+            "description": "Automated continuous delivery and distributed systems monitoring.",
+            "topics": [
+              "GitHub Actions: Matrix builds, secret management, and artifact caching",
+              "GitOps workflows with ArgoCD on Kubernetes",
+              "Metrics and logging with Prometheus, Grafana, and Loki",
+              "Incident response, synthetic monitoring, and SLA/SLO tracking"
+            ],
+            "orderIndex": 4,
+            "durationHours": 25,
+            "createdAt": "2026-10-29T05:09:10.836Z",
+            "updatedAt": "2026-10-29T05:09:10.836Z"
+          }
+        ]
+      },
+      {
+        "id": "e863b4aa-6323-457c-a521-85e61398efe4",
+        "title": "Data Analytics & Modern Analytics Engineering",
+        "slug": "data-analytics",
+        "summary": "Transform messy organizational data into decision-making assets using Advanced SQL, Python data analysis, dbt transformations, and interactive executive dashboards.",
+        "description": "Step beyond standard spreadsheet reporting into professional data analytics. This program covers dimensional data modeling (Kimball methodology), advanced SQL analytical window functions, data wrangling with Python Pandas and DuckDB, automated dbt transformation DAGs, and crafting persuasive, human-centered business intelligence dashboards.",
+        "categoryId": "3429e1df-c35b-4201-86bf-5eabb8f3734b",
+        "duration": "12 Weeks (90 Hours)",
+        "learningMode": "ONLINE",
+        "fees": 34000,
+        "isFeatured": true,
+        "isPublished": true,
+        "isArchived": false,
+        "eligibility": "Comfortable with spreadsheets and numerical analysis. No prior programming background strictly required.",
+        "displayOrder": 4,
+        "createdAt": "2026-10-29T04:32:11.699Z",
+        "updatedAt": "2026-10-29T05:09:10.839Z",
+        "modules": [
+          {
+            "id": "c8f18fbc-afb9-4a07-bbe4-2e2c594a661e",
+            "courseId": "e863b4aa-6323-457c-a521-85e61398efe4",
+            "title": "Module 1: Advanced Relational SQL for Analytical Queries",
+            "description": "Complex querying, CTEs, window functions, and query optimization.",
+            "topics": [
+              "Complex Joins, Subqueries, and Common Table Expressions (CTEs)",
+              "Window functions: ROW_NUMBER, RANK, DENSE_RANK, LEAD, LAG, and rolling aggregations",
+              "Performance indexing, EXPLAIN ANALYZE, and execution plans",
+              "Data normalization and Star/Snowflake dimensional schemas"
+            ],
+            "orderIndex": 1,
+            "durationHours": 22,
+            "createdAt": "2026-10-29T05:09:10.841Z",
+            "updatedAt": "2026-10-29T05:09:10.841Z"
+          },
+          {
+            "id": "4c7da108-b5f0-4208-b4af-21286fb69539",
+            "courseId": "e863b4aa-6323-457c-a521-85e61398efe4",
+            "title": "Module 2: Python for Data Analysis & Statistical Modeling",
+            "description": "Data manipulation with Pandas, NumPy, and statistical hypothesis testing.",
+            "topics": [
+              "NumPy array operations and vectorized calculations",
+              "Pandas: DataFrames, missing value imputation, multi-indexing, and reshaping",
+              "Exploratory Data Analysis (EDA) and distribution testing",
+              "Data visualization with Seaborn, Matplotlib, and Plotly"
+            ],
+            "orderIndex": 2,
+            "durationHours": 23,
+            "createdAt": "2026-10-29T05:09:10.842Z",
+            "updatedAt": "2026-10-29T05:09:10.842Z"
+          },
+          {
+            "id": "617d37ec-4bec-4734-b376-145002ed7740",
+            "courseId": "e863b4aa-6323-457c-a521-85e61398efe4",
+            "title": "Module 3: Analytics Engineering with dbt & Cloud Data Warehouses",
+            "description": "Building production data pipelines with dbt (data build tool).",
+            "topics": [
+              "Modern Data Stack overview: Snowflake, BigQuery, and DuckDB",
+              "dbt fundamentals: Models, sources, seeds, and Jinja templating",
+              "Testing data quality, freshness tests, and documentation generation",
+              "Incremental data models and orchestration with scheduling tools"
+            ],
+            "orderIndex": 3,
+            "durationHours": 22,
+            "createdAt": "2026-10-29T05:09:10.842Z",
+            "updatedAt": "2026-10-29T05:09:10.842Z"
+          },
+          {
+            "id": "1c66d5c5-c114-4d5c-ac55-4d9b0de9f574",
+            "courseId": "e863b4aa-6323-457c-a521-85e61398efe4",
+            "title": "Module 4: Business Intelligence & Executive Storytelling",
+            "description": "Translating data insights into executive action.",
+            "topics": [
+              "Dashboard UX design principles: Visual hierarchy and cognitive load reduction",
+              "Building interactive dashboards in Power BI and Tableau",
+              "Cohort analysis, retention curves, and churn analysis",
+              "Executive presentation strategies and data storytelling"
+            ],
+            "orderIndex": 4,
+            "durationHours": 23,
+            "createdAt": "2026-10-29T05:09:10.843Z",
+            "updatedAt": "2026-10-29T05:09:10.843Z"
+          }
+        ]
+      },
+      {
+        "id": "e2a546a4-3ef2-4898-88cf-199d2b4ef6db",
+        "title": "Cybersecurity Defense, SOC Operations & Ethical Hacking",
+        "slug": "cybersecurity",
+        "summary": "Defend enterprise IT perimeters, conduct vulnerability assessments, monitor SIEM security alerts, and execute controlled ethical penetration testing.",
+        "description": "A practical, laboratory-driven curriculum focusing on defensive engineering and blue team operations. Students analyze live network traffic, configure firewall policies, investigate attack simulations in a sandboxed security operations center (SOC), and master vulnerability scanning tools.",
+        "categoryId": "e905fb24-45b9-42e0-91da-c385b3f1479f",
+        "duration": "14 Weeks (100 Hours)",
+        "learningMode": "HYBRID",
+        "fees": 40000,
+        "isFeatured": false,
+        "isPublished": true,
+        "isArchived": false,
+        "eligibility": "Fundamental knowledge of operating systems (Windows and Linux) and networking protocols (TCP, UDP, DNS, TLS).",
+        "displayOrder": 5,
+        "createdAt": "2026-10-29T04:32:11.706Z",
+        "updatedAt": "2026-10-29T05:09:10.844Z",
+        "modules": [
+          {
+            "id": "c70b2e70-ff46-4246-9413-39d8efbfdd29",
+            "courseId": "e2a546a4-3ef2-4898-88cf-199d2b4ef6db",
+            "title": "Module 1: Network Protocols, Packet Analysis & Threat Landscapes",
+            "description": "Deep dive into network packets, OSI layers, and attack vectors.",
+            "topics": [
+              "Packet capture and dissection with Wireshark and tcpdump",
+              "TCP/IP handshakes, ARP poisoning, and DNS spoofing analysis",
+              "Common vulnerability enumeration: MITRE ATT&CK and OWASP Top 10",
+              "Hardening network devices, VLANs, and firewall rule configurations"
+            ],
+            "orderIndex": 1,
+            "durationHours": 25,
+            "createdAt": "2026-10-29T05:09:10.846Z",
+            "updatedAt": "2026-10-29T05:09:10.846Z"
+          },
+          {
+            "id": "862f6ed9-061a-42e1-a2f8-0bcd9f6e37f6",
+            "courseId": "e2a546a4-3ef2-4898-88cf-199d2b4ef6db",
+            "title": "Module 2: Vulnerability Assessment & Defensive Architecture",
+            "description": "Scanning, hardening, and establishing zero-trust access controls.",
+            "topics": [
+              "Vulnerability scanning with Nessus and OpenVAS",
+              "Operating system hardening benchmarks (CIS benchmarks)",
+              "Identity and Access Management (IAM), MFA, and Zero Trust models",
+              "Endpoint Detection and Response (EDR) agents and telemetry"
+            ],
+            "orderIndex": 2,
+            "durationHours": 25,
+            "createdAt": "2026-10-29T05:09:10.846Z",
+            "updatedAt": "2026-10-29T05:09:10.846Z"
+          },
+          {
+            "id": "d8815ce1-2801-4524-9068-cecc289c2d4c",
+            "courseId": "e2a546a4-3ef2-4898-88cf-199d2b4ef6db",
+            "title": "Module 3: Security Operations Center (SOC) & SIEM Analysis",
+            "description": "Investigating alerts, log correlation, and incident response playbooks.",
+            "topics": [
+              "Log ingestion and search using Splunk and ELK stack",
+              "Writing detection rules for brute force, lateral movement, and data exfiltration",
+              "Incident response lifecycle (NIST / SANS frameworks)",
+              "Memory analysis, digital forensics, and chain of custody preservation"
+            ],
+            "orderIndex": 3,
+            "durationHours": 25,
+            "createdAt": "2026-10-29T05:09:10.847Z",
+            "updatedAt": "2026-10-29T05:09:10.847Z"
+          },
+          {
+            "id": "1bb0f93f-ac65-40e3-9b3f-e23a762d11d5",
+            "courseId": "e2a546a4-3ef2-4898-88cf-199d2b4ef6db",
+            "title": "Module 4: Ethical Penetration Testing & Web Application Security",
+            "description": "Hands-on controlled penetration testing methodologies.",
+            "topics": [
+              "Reconnaissance, port scanning, and service enumeration with Nmap",
+              "Exploiting web vulnerabilities: SQLi, XSS, CSRF, and SSRF in controlled labs",
+              "Privilege escalation techniques on Linux and Windows",
+              "Remediation reporting and communicating technical risk to stakeholders"
+            ],
+            "orderIndex": 4,
+            "durationHours": 25,
+            "createdAt": "2026-10-29T05:09:10.848Z",
+            "updatedAt": "2026-10-29T05:09:10.848Z"
+          }
+        ]
+      },
+      {
+        "id": "74c83041-79f8-4af7-8509-a1fd5c673106",
+        "title": "Python for Systems Automation, APIs & Scripting",
+        "slug": "python-automation",
+        "summary": "Master modern Python 3, object-oriented software design, asynchronous concurrency, robust API development with FastAPI, and automated system scripts.",
+        "description": "Engineered for developers, IT administrators, and career-changers who want a rock-solid Python programming foundation. You will write idiomatic, performant Python code, interact with external REST APIs, automate file and database workflows, and package your own CLI tools.",
+        "categoryId": "645818b1-892b-4cf1-aa9c-445c7153fc38",
+        "duration": "10 Weeks (75 Hours)",
+        "learningMode": "IN_PERSON",
+        "fees": 28000,
+        "isFeatured": false,
+        "isPublished": true,
+        "isArchived": false,
+        "eligibility": "Beginners with strong curiosity and problem-solving drive. No prior programming needed.",
+        "displayOrder": 6,
+        "createdAt": "2026-10-29T04:32:11.711Z",
+        "updatedAt": "2026-10-29T05:09:10.848Z",
+        "modules": [
+          {
+            "id": "0912a7e2-aa3f-4288-9402-b0f51041225d",
+            "courseId": "74c83041-79f8-4af7-8509-a1fd5c673106",
+            "title": "Module 1: Core Python Syntax, Data Structures & Logic",
+            "description": "Building strong fundamentals with data structures and procedural logic.",
+            "topics": [
+              "Python data types, immutability, lists, dictionaries, sets, and tuples",
+              "Flow control, list comprehensions, and generator expressions",
+              "Functions, scope, closures, and first-class functions",
+              "File I/O operations, JSON/CSV parsing, and exception handling"
+            ],
+            "orderIndex": 1,
+            "durationHours": 20,
+            "createdAt": "2026-10-29T05:09:10.850Z",
+            "updatedAt": "2026-10-29T05:09:10.850Z"
+          },
+          {
+            "id": "542f9d70-c076-42d3-96d7-f0d8e13ddccd",
+            "courseId": "74c83041-79f8-4af7-8509-a1fd5c673106",
+            "title": "Module 2: Object-Oriented Design & Clean Code Practices",
+            "description": "Writing maintainable, modular, and testable code.",
+            "topics": [
+              "Classes, instances, inheritance, and encapsulation",
+              "Dunder methods (magic methods) and operator overloading",
+              "Type hinting with mypy and static analysis with ruff",
+              "Unit testing with pytest, fixtures, and mocking"
+            ],
+            "orderIndex": 2,
+            "durationHours": 20,
+            "createdAt": "2026-10-29T05:09:10.851Z",
+            "updatedAt": "2026-10-29T05:09:10.851Z"
+          },
+          {
+            "id": "fdc8b5b4-9314-4d61-92ba-a90e5195b019",
+            "courseId": "74c83041-79f8-4af7-8509-a1fd5c673106",
+            "title": "Module 3: Asynchronous Programming & REST API Development",
+            "description": "Building fast web services with FastAPI and async/await.",
+            "topics": [
+              "Asyncio fundamentals: Event loop, coroutines, and tasks",
+              "FastAPI framework: Route handlers, request validation with Pydantic",
+              "Database integration with SQLAlchemy 2.0 and SQLite/PostgreSQL",
+              "Authentication, token verification, and Swagger OpenAPI documentation"
+            ],
+            "orderIndex": 3,
+            "durationHours": 20,
+            "createdAt": "2026-10-29T05:09:10.852Z",
+            "updatedAt": "2026-10-29T05:09:10.852Z"
+          },
+          {
+            "id": "60cc4dd0-66d5-402f-bac5-761fe4e5243a",
+            "courseId": "74c83041-79f8-4af7-8509-a1fd5c673106",
+            "title": "Module 4: Practical Systems Automation & CLI Utilities",
+            "description": "Automating operational workflows and external services.",
+            "topics": [
+              "Automated web scraping with BeautifulSoup and Playwright",
+              "Automating email dispatches, scheduled cron tasks, and report generators",
+              "Building command-line utilities with Click and Typer",
+              "Virtual environments, poetry dependency management, and packaging"
+            ],
+            "orderIndex": 4,
+            "durationHours": 15,
+            "createdAt": "2026-10-29T05:09:10.854Z",
+            "updatedAt": "2026-10-29T05:09:10.854Z"
+          }
+        ]
+      },
+      {
+        "id": "a36589b8-efa8-46c6-81a6-e09e7eee87e8",
+        "title": "Advanced Distributed Systems Architecture (Internal Preview)",
+        "slug": "advanced-systems-architecture",
+        "summary": "High-throughput event-driven microservices, consensus protocols, and fault-tolerant system design. Unpublished internal curriculum preview.",
+        "description": "An advanced course for senior engineers currently in curriculum review. Not yet open for public student enrolments.",
+        "categoryId": "9849eb1a-6a27-4ab1-95e4-a8df4bceca9e",
+        "duration": "12 Weeks (80 Hours)",
+        "learningMode": "HYBRID",
+        "fees": 55000,
+        "isFeatured": false,
+        "isPublished": false,
+        "isArchived": false,
+        "eligibility": "Senior developers with minimum 3 years of production backend experience.",
+        "displayOrder": 7,
+        "createdAt": "2026-10-29T04:32:11.718Z",
+        "updatedAt": "2026-10-29T05:09:10.855Z",
+        "modules": [
+          {
+            "id": "f19ad771-63fa-405d-a193-fe8514dc654f",
+            "courseId": "a36589b8-efa8-46c6-81a6-e09e7eee87e8",
+            "title": "Module 1: Distributed Consensus & Raft",
+            "description": "Understanding consensus, quorum, and partition tolerance.",
+            "topics": [
+              "CAP theorem in practice",
+              "Raft consensus mechanics",
+              "Vector clocks"
+            ],
+            "orderIndex": 1,
+            "durationHours": 20,
+            "createdAt": "2026-10-29T05:09:10.857Z",
+            "updatedAt": "2026-10-29T05:09:10.857Z"
+          }
+        ]
+      },
+      {
+        "id": "7da671a0-91ba-4147-aebc-1feb04d769bd",
+        "title": "Full Stack Web Engineering with Next.js & Node.js",
+        "slug": "full-stack-development",
+        "summary": "Architect and build robust, high-performance web applications using TypeScript, Next.js App Router, Express REST APIs, PostgreSQL, Prisma, and Redis caching.",
+        "description": "Designed for developers seeking full architectural mastery from database design to edge-rendered user interfaces. This course eschews superficial tutorials in favor of production realities: connection pooling, zero-downtime database migrations, atomic transactions, session and JWT authorization patterns, automated end-to-end testing, and performance profiling under load.",
+        "categoryId": "9849eb1a-6a27-4ab1-95e4-a8df4bceca9e",
+        "duration": "18 Weeks (140 Hours)",
+        "learningMode": "HYBRID",
+        "fees": 42000,
+        "isFeatured": true,
+        "isPublished": true,
+        "isArchived": false,
+        "eligibility": "Basic familiarity with HTML, CSS, and general programming fundamentals. Beginners with analytical problem-solving aptitude are encouraged.",
+        "displayOrder": 2,
+        "createdAt": "2026-10-29T04:32:11.684Z",
+        "updatedAt": "2026-10-29T06:49:47.203Z",
+        "modules": [
+          {
+            "id": "80d6fe1d-1337-4f6e-ae9f-770769b84bb1",
+            "courseId": "7da671a0-91ba-4147-aebc-1feb04d769bd",
+            "title": "Module 1: Advanced TypeScript & Modern JavaScript Internals",
+            "description": "Mastering the type system, runtime vs compile-time guarantees, asynchronous event loops, and clean code paradigms.",
+            "topics": [
+              "Advanced TypeScript: Generics, utility types, conditional types, and schema validation with Zod",
+              "V8 engine internals, event loop mechanics, microtasks, and memory management",
+              "Modern ESNext patterns: Async generators, iterators, and modules",
+              "Clean Architecture principles and Domain-Driven Design concepts"
+            ],
+            "orderIndex": 1,
+            "durationHours": 35,
+            "createdAt": "2026-10-29T05:09:10.828Z",
+            "updatedAt": "2026-10-29T05:09:10.828Z"
+          },
+          {
+            "id": "6bf11545-64c4-42c1-83a2-ee0ebe128a08",
+            "courseId": "7da671a0-91ba-4147-aebc-1feb04d769bd",
+            "title": "Module 2: Server Architecture with Express & Prisma ORM",
+            "description": "Designing scalable RESTful APIs, relational data modeling, migrations, and robust error hierarchies.",
+            "topics": [
+              "RESTful API design conventions, middleware pipelines, and structured logging",
+              "PostgreSQL relational modeling, indexing strategies, foreign keys, and transactions",
+              "Prisma ORM schema design, migrations, and query performance tuning",
+              "Authentication: Secure password hashing, JWTs, HTTP-only refresh cookies, and RBAC"
+            ],
+            "orderIndex": 2,
+            "durationHours": 35,
+            "createdAt": "2026-10-29T05:09:10.829Z",
+            "updatedAt": "2026-10-29T05:09:10.829Z"
+          },
+          {
+            "id": "bfe5dffb-da0d-4ee5-b7fc-4f0bff6fd9eb",
+            "courseId": "7da671a0-91ba-4147-aebc-1feb04d769bd",
+            "title": "Module 3: Next.js App Router & Server-Side Rendering",
+            "description": "Harnessing React Server Components, streaming SSR, parallel routes, and modern Tailwind CSS UI architecture.",
+            "topics": [
+              "React 18/19 mental models: Server Components vs Client Components",
+              "Next.js App Router: Dynamic routing, route handlers, layouts, and error boundaries",
+              "Server Actions, optimistic updates, and form state management",
+              "Design systems with Tailwind CSS, accessible shadcn/ui primitives, and responsiveness"
+            ],
+            "orderIndex": 3,
+            "durationHours": 35,
+            "createdAt": "2026-10-29T05:09:10.830Z",
+            "updatedAt": "2026-10-29T05:09:10.830Z"
+          },
+          {
+            "id": "4c24a893-ad60-4f36-84bf-8558ea4581a2",
+            "courseId": "7da671a0-91ba-4147-aebc-1feb04d769bd",
+            "title": "Module 4: Performance, Caching, Testing & Production Deployment",
+            "description": "Redis caching layers, rate limiting, unit and integration testing, and CI/CD deployment pipelines.",
+            "topics": [
+              "In-memory caching with Redis: Cache invalidation strategies and pub/sub",
+              "Security hardening: Helmet, CORS, CSRF defenses, and rate limiting",
+              "Automated testing: Unit tests with Vitest, integration tests with Playwright",
+              "Docker containerization, environment management, and cloud deployments"
+            ],
+            "orderIndex": 4,
+            "durationHours": 35,
+            "createdAt": "2026-10-29T05:09:10.831Z",
+            "updatedAt": "2026-10-29T05:09:10.831Z"
+          }
+        ]
+      },
+      {
+        "id": "74309622-7c7b-4760-8fc3-dc95f9433721",
+        "title": "Applied Artificial Intelligence & Large Language Models",
+        "slug": "artificial-intelligence",
+        "summary": "Learn core machine learning paradigms, fine-tuning modern transformer models, implementing Retrieval-Augmented Generation (RAG), and deploying scalable AI inference APIs.",
+        "description": "This intensive program guides engineers from foundational machine learning mathematics to deploying production-ready AI systems. You will implement embedding pipelines with pgvector, fine-tune open-weights models like Llama 3, build robust multi-agent orchestration frameworks, and measure model hallucinations with evaluation benchmarks. Every cohort builds an end-to-end proprietary knowledge base search and agentic reasoning workflow.",
+        "categoryId": "0bc168a3-cdd6-4deb-8c5f-e8398d6cf074",
+        "duration": "16 Weeks (120 Hours)",
+        "learningMode": "HYBRID",
+        "fees": 48000,
+        "isFeatured": true,
+        "isPublished": true,
+        "isArchived": false,
+        "eligibility": "Prior programming proficiency in Python or another modern language. Comfort with high school mathematics (vectors, derivatives, probability) recommended.",
+        "displayOrder": 1,
+        "createdAt": "2026-10-29T04:32:11.659Z",
+        "updatedAt": "2026-10-29T06:49:28.584Z",
+        "modules": [
+          {
+            "id": "749d1884-3ddb-4e2f-86e8-3009a69b0216",
+            "courseId": "74309622-7c7b-4760-8fc3-dc95f9433721",
+            "title": "Module 1: Foundations of Machine Learning & Vector Math",
+            "description": "Supervised learning algorithms, loss functions, gradient descent, feature normalization, and vector representations.",
+            "topics": [
+              "Mathematical foundations: Linear algebra, calculus & probability",
+              "Supervised vs Unsupervised learning paradigms",
+              "Regression, Classification, and Model Evaluation Metrics",
+              "Vector embeddings, distance metrics, and similarity search"
+            ],
+            "orderIndex": 1,
+            "durationHours": 30,
+            "createdAt": "2026-10-29T05:09:10.805Z",
+            "updatedAt": "2026-10-29T05:09:10.805Z"
+          },
+          {
+            "id": "e0e56cd5-41b8-4ffb-9276-e97b92e313fd",
+            "courseId": "74309622-7c7b-4760-8fc3-dc95f9433721",
+            "title": "Module 2: Deep Learning & Modern Transformer Architectures",
+            "description": "Neural networks, backpropagation, attention mechanisms, self-attention, and the transformer encoder-decoder blueprint.",
+            "topics": [
+              "Multi-layer perceptrons and gradient backpropagation in PyTorch",
+              "Attention Is All You Need: Deconstructing self-attention & multi-head attention",
+              "Tokenization, positional encodings, and context windows",
+              "Pre-trained language models: BERT, GPT, and modern decoder-only architectures"
+            ],
+            "orderIndex": 2,
+            "durationHours": 30,
+            "createdAt": "2026-10-29T05:09:10.819Z",
+            "updatedAt": "2026-10-29T05:09:10.819Z"
+          },
+          {
+            "id": "7d034127-f89a-4413-a38f-59e7db3101c6",
+            "courseId": "74309622-7c7b-4760-8fc3-dc95f9433721",
+            "title": "Module 3: Retrieval-Augmented Generation (RAG) & Vector Databases",
+            "description": "Designing enterprise-grade knowledge retrieval architectures with chunking strategies and semantic reranking.",
+            "topics": [
+              "Document parsing, chunking strategies, and metadata indexing",
+              "PostgreSQL pgvector, Pinecone, and hybrid BM25 + dense search",
+              "Context injection, query transformation, and cross-encoder re-ranking",
+              "Mitigating hallucinations and building automated RAG evaluation (Ragas)"
+            ],
+            "orderIndex": 3,
+            "durationHours": 30,
+            "createdAt": "2026-10-29T05:09:10.822Z",
+            "updatedAt": "2026-10-29T05:09:10.822Z"
+          },
+          {
+            "id": "dc0cb4ed-662d-4701-b2a0-84821cf36896",
+            "courseId": "74309622-7c7b-4760-8fc3-dc95f9433721",
+            "title": "Module 4: Production LLM Deployment, Fine-Tuning & Multi-Agent Systems",
+            "description": "LoRA parameter-efficient fine-tuning, streaming inference servers, structured outputs, and autonomous agent orchestration.",
+            "topics": [
+              "Parameter-Efficient Fine-Tuning (PEFT/LoRA) using Hugging Face",
+              "High-throughput inference with vLLM, Ollama, and FastAPI streaming",
+              "Tool-use, function calling, and LangGraph multi-agent systems",
+              "Production observability, prompt telemetry, and safety guardrails"
+            ],
+            "orderIndex": 4,
+            "durationHours": 30,
+            "createdAt": "2026-10-29T05:09:10.823Z",
+            "updatedAt": "2026-10-29T05:09:10.823Z"
+          }
+        ]
+      },
+      {
+        "id": "5130724c-e3a9-4059-81a4-10913673bba5",
+        "title": "sample cdourse",
+        "slug": "sample-cdourse",
+        "summary": "chvxfghfgh",
+        "description": "fghdesryreghryst",
+        "categoryId": "0bc168a3-cdd6-4deb-8c5f-e8398d6cf074",
+        "duration": "14 Weeks (100 Hours)",
+        "learningMode": "HYBRID",
+        "fees": 35000,
+        "isFeatured": true,
+        "isPublished": true,
+        "isArchived": true,
+        "eligibility": "fg",
+        "displayOrder": 0,
+        "createdAt": "2026-10-29T07:12:04.240Z",
+        "updatedAt": "2026-10-29T07:13:13.765Z",
+        "modules": [
+          {
+            "id": "3a71cfea-3577-4d8e-8663-8aef1754336e",
+            "courseId": "5130724c-e3a9-4059-81a4-10913673bba5",
+            "title": "Module 1: Foundations & Architecture",
+            "description": "Core principles, system design blueprints, and setup.",
+            "topics": [
+              "Core syntax",
+              "Protocols",
+              "Architectural patterns"
+            ],
+            "orderIndex": 1,
+            "durationHours": 25,
+            "createdAt": "2026-10-29T07:13:13.784Z",
+            "updatedAt": "2026-10-29T07:13:13.784Z"
+          }
+        ]
+      }
+    ],
+    "siteSettings": [
+      {
+        "id": "default",
+        "instituteName": "VLEARNN",
+        "tagLine": "Practical IT & Advanced Technical Training",
+        "heroTitle": "Master Real-World IT Engineering with Industry Practitioners",
+        "heroSubtitle": "Rigorous, cohort-based technical training in Artificial Intelligence, Full Stack Web Architecture, Cloud DevOps, and Data Systems. Build production applications, not toy projects.",
+        "aboutStory": "VLEARNN was established to address a persistent gap in modern IT education: traditional courses focus on surface-level syntax, while modern technology teams demand architecture comprehension, system resilience, and production-tested competence. Our curriculum is engineered directly by active senior staff engineers and engineering managers.",
+        "mission": "To provide disciplined, hands-on technical education that empowers students and career-changers to design, develop, and operate high-standard software systems.",
+        "vision": "To become the benchmark institute for practical IT engineering education, recognized by engineering organizations for producing capable, day-one productive technologists.",
+        "address": "VLEARNN Tech Campus, Level 4, Innovation Square, Tech Corridor, Bangalore 560103, India",
+        "phone": "+91 98765 43210",
+        "email": "admissions@vlearnn.com",
+        "whatsappNumber": "+919876543210",
+        "facebookUrl": "https://facebook.com/vlearnn",
+        "linkedinUrl": "https://linkedin.com/company/vlearnn",
+        "twitterUrl": "https://twitter.com/vlearnn",
+        "githubUrl": "https://github.com/vlearnn",
+        "updatedAt": "2026-10-29T08:01:10.112Z"
+      }
+    ],
+    "faqs": [
+      {
+        "id": "ffb77893-3f62-4959-abe9-b9aef2d9b78b",
+        "question": "How are VLEARNN programs different from online video courses?",
+        "answer": "Unlike self-paced recorded tutorials with single-digit completion rates, VLEARNN operates on a rigorous cohort-based model. You learn directly from practicing industry engineers, submit weekly code projects that receive thorough line-by-line pull request reviews, and collaborate in pair-programming labs.",
+        "category": "Admissions & Methodology",
+        "displayOrder": 1,
+        "isPublished": true,
+        "createdAt": "2026-10-29T04:32:11.724Z",
+        "updatedAt": "2026-10-29T05:09:10.861Z"
+      },
+      {
+        "id": "64ff992b-5623-4753-a6cf-81311dcf80b9",
+        "question": "What are the prerequisite requirements for enrolling in courses?",
+        "answer": "Prerequisites depend on the specific program. Foundational courses like Python and Data Analytics require zero prior coding experience. Advanced programs like Applied AI and Cloud DevOps assume familiarity with basic programming fundamentals. We offer free preparatory bridge modules before cohort kickoffs.",
+        "category": "Prerequisites",
+        "displayOrder": 2,
+        "isPublished": true,
+        "createdAt": "2026-10-29T04:32:11.725Z",
+        "updatedAt": "2026-10-29T05:09:10.864Z"
+      },
+      {
+        "id": "90b6321f-a8a1-4909-b1e4-09f8df32d54a",
+        "question": "Can I take classes while working full-time?",
+        "answer": "Yes. Our cohorts are specifically scheduled for working professionals and university students. Classroom and live interactive sessions are held on weekend mornings and weekday evenings. All live sessions are recorded and indexed for revision.",
+        "category": "Schedule & Mode",
+        "displayOrder": 3,
+        "isPublished": true,
+        "createdAt": "2026-10-29T04:32:11.726Z",
+        "updatedAt": "2026-10-29T05:09:10.865Z"
+      },
+      {
+        "id": "f03f40bd-2474-4ee8-b641-85da134b1209",
+        "question": "What does the 1-on-1 career mentoring support include?",
+        "answer": "Mentorship includes technical portfolio auditing, resume restructuring tailored to ATS screening, system design mock interviews, behavioral prep, and direct interview referrals to our hiring network.",
+        "category": "Career Support",
+        "displayOrder": 4,
+        "isPublished": true,
+        "createdAt": "2026-10-29T04:32:11.727Z",
+        "updatedAt": "2026-10-29T05:09:10.866Z"
+      },
+      {
+        "id": "8dd7d683-105f-4577-840c-c00ead3d1ce0",
+        "question": "Are certificates recognized by technology employers?",
+        "answer": "Upon graduating and passing all capstone project defenses, students receive a verified VLEARNN Certificate of Technical Competence with a cryptographic verification hash. More importantly, hiring managers value the verifiable GitHub repositories and deployed live projects built during the program.",
+        "category": "Certifications",
+        "displayOrder": 5,
+        "isPublished": true,
+        "createdAt": "2026-10-29T04:32:11.728Z",
+        "updatedAt": "2026-10-29T05:09:10.867Z"
+      },
+      {
+        "id": "bac88434-63e9-4d22-a2ba-bfc375358110",
+        "question": "What is the fee payment structure and refund policy?",
+        "answer": "Fees can be paid upfront with an early-bird discount or structured across flexible zero-cost monthly installments. We offer a 100% money-back guarantee within the first 7 days if you find the curriculum or teaching standard does not meet expectations.",
+        "category": "Fees & Payment",
+        "displayOrder": 6,
+        "isPublished": true,
+        "createdAt": "2026-10-29T04:32:11.730Z",
+        "updatedAt": "2026-10-29T05:09:10.868Z"
+      },
+      {
+        "id": "b5936978-662e-48cd-97ae-16d306be38c4",
+        "question": "sample question",
+        "answer": "shbadfiushdaiudhafiuhdiughv",
+        "category": "General",
+        "displayOrder": 7,
+        "isPublished": true,
+        "createdAt": "2026-10-29T07:13:30.532Z",
+        "updatedAt": "2026-10-29T07:13:30.532Z"
+      }
+    ],
+    "testimonials": [
+      {
+        "id": "425a128b-9f01-4845-8046-6f677db088e2",
+        "studentName": "Aditya Nair",
+        "courseName": "Applied Artificial Intelligence & Large Language Models",
+        "role": "AI Engineer",
+        "company": "Cognitive Solutions",
+        "quote": "The RAG module and vector database labs gave me the exact architecture models I needed. Instead of toy examples, we built production-grade evaluation pipelines. That capstone project directly secured my transition into AI engineering.",
+        "rating": 5,
+        "isPublished": true,
+        "displayOrder": 1,
+        "createdAt": "2026-10-29T04:32:11.742Z",
+        "updatedAt": "2026-10-29T05:09:10.882Z"
+      },
+      {
+        "id": "1d8e6621-4eea-4e5d-aae8-a96c108a4e4d",
+        "studentName": "Sneha Mukherjee",
+        "courseName": "Full Stack Web Engineering with Next.js & Node.js",
+        "role": "Software Development Engineer",
+        "company": "Novacorp Labs",
+        "quote": "I was tired of surface-level tutorials that never explained database connection pools, transactions, or production cache strategies. VLEARNN’s code reviews pushed my TypeScript and backend standards to a senior level.",
+        "rating": 5,
+        "isPublished": true,
+        "displayOrder": 2,
+        "createdAt": "2026-10-29T04:32:11.743Z",
+        "updatedAt": "2026-10-29T05:09:10.884Z"
+      },
+      {
+        "id": "a0525d43-74f1-4e7c-81ed-001877a4fc36",
+        "studentName": "Karthik Rajan",
+        "courseName": "Cloud Infrastructure, Kubernetes & DevOps Engineering",
+        "role": "DevOps Engineer",
+        "company": "CloudScale Systems",
+        "quote": "Writing production Terraform modules and managing multi-node Kubernetes deployments with live ingress gave me true operational confidence. The mentors are practicing engineers who share real war stories.",
+        "rating": 5,
+        "isPublished": true,
+        "displayOrder": 3,
+        "createdAt": "2026-10-29T04:32:11.744Z",
+        "updatedAt": "2026-10-29T05:09:10.886Z"
+      }
+    ],
+    "facultyProfiles": [
+      {
+        "id": "9c8ea89b-0ffd-4123-bb6c-870c6eb59f3d",
+        "name": "Dr. Arvind Sundaram",
+        "title": "Lead AI & Distributed Systems Faculty",
+        "bio": "Former Principal Architect with 14+ years of experience leading machine learning infrastructure teams at tier-1 enterprise tech firms.",
+        "expertise": [
+          "Large Language Models",
+          "PyTorch",
+          "High-Throughput Distributed Systems",
+          "Vector Databases"
+        ],
+        "yearsExperience": 14,
+        "displayOrder": 1,
+        "isPublished": true,
+        "createdAt": "2026-10-29T04:32:11.735Z",
+        "updatedAt": "2026-10-29T05:09:10.872Z"
+      },
+      {
+        "id": "bb43f186-64cd-4c8a-9d88-e6b34dae2dc9",
+        "name": "Meera Krishnan",
+        "title": "Head of Web & Systems Engineering",
+        "bio": "Full stack engineering leader specializing in TypeScript, Next.js architecture, and large-scale cloud microservices. Active open-source contributor.",
+        "expertise": [
+          "Next.js",
+          "TypeScript",
+          "PostgreSQL Architecture",
+          "Clean Architecture",
+          "Node.js"
+        ],
+        "yearsExperience": 11,
+        "displayOrder": 2,
+        "isPublished": true,
+        "createdAt": "2026-10-29T04:32:11.737Z",
+        "updatedAt": "2026-10-29T05:09:10.874Z"
+      },
+      {
+        "id": "df29afed-5ca8-4e52-a093-97049a15b5ff",
+        "name": "Rohan Varma",
+        "title": "Principal Cloud & SRE Mentor",
+        "bio": "Certified Kubernetes Administrator (CKA) and AWS Solutions Architect who has scaled multi-region infrastructures serving millions of daily active users.",
+        "expertise": [
+          "Kubernetes",
+          "Terraform",
+          "AWS Cloud",
+          "Docker",
+          "CI/CD Automation",
+          "Prometheus"
+        ],
+        "yearsExperience": 12,
+        "displayOrder": 3,
+        "isPublished": true,
+        "createdAt": "2026-10-29T04:32:11.737Z",
+        "updatedAt": "2026-10-29T05:09:10.875Z"
+      },
+      {
+        "id": "7d76fc8d-665c-48be-a2ff-f86975cb034e",
+        "name": "Pooja Deshmukh",
+        "title": "Staff Data & Analytics Architect",
+        "bio": "Analytics engineering specialist who has built enterprise data platforms with dbt, Snowflake, and Python for fintech and logistics companies.",
+        "expertise": [
+          "dbt",
+          "Advanced SQL",
+          "Snowflake",
+          "Python Pandas",
+          "Power BI",
+          "Data Modeling"
+        ],
+        "yearsExperience": 10,
+        "displayOrder": 4,
+        "isPublished": true,
+        "createdAt": "2026-10-29T04:32:11.738Z",
+        "updatedAt": "2026-10-29T05:09:10.878Z"
+      }
+    ],
+    "enquiries": [
+      {
+        "id": "d955aac2-4614-4e1a-a4ec-80e1507e921b",
+        "enquiryNumber": "VL-ENQ-2026-7841",
+        "fullName": "Integration Test Candidate",
+        "email": "test.candidate@example.com",
+        "countryCode": "+91",
+        "phone": "9876543210",
+        "courseId": "74309622-7c7b-4760-8fc3-dc95f9433721",
+        "learningMode": "HYBRID",
+        "message": "This is an automated test enquiry verifying real PostgreSQL persistence.",
+        "status": "NEW",
+        "notes": null,
+        "followUpDate": null,
+        "consentGiven": true,
+        "source": "WEBSITE",
+        "createdAt": "2026-10-29T04:32:24.232Z",
+        "updatedAt": "2026-10-29T04:32:24.232Z"
+      },
+      {
+        "id": "db74a188-4d0d-40bd-9d65-9738cc9e91b6",
+        "enquiryNumber": "VL-ENQ-2026-2003",
+        "fullName": "Integration Test Candidate",
+        "email": "test.candidate@example.com",
+        "countryCode": "+91",
+        "phone": "9876543210",
+        "courseId": "74309622-7c7b-4760-8fc3-dc95f9433721",
+        "learningMode": "HYBRID",
+        "message": "This is an automated test enquiry verifying real PostgreSQL persistence.",
+        "status": "NEW",
+        "notes": null,
+        "followUpDate": null,
+        "consentGiven": true,
+        "source": "WEBSITE",
+        "createdAt": "2026-10-29T04:40:20.698Z",
+        "updatedAt": "2026-10-29T04:40:20.698Z"
+      },
+      {
+        "id": "fffce214-f1bb-4920-97ec-1223d47f7077",
+        "enquiryNumber": "VL-ENQ-2026-7937",
+        "fullName": "Integration Test Candidate",
+        "email": "test.candidate@example.com",
+        "countryCode": "+91",
+        "phone": "9876543210",
+        "courseId": "74309622-7c7b-4760-8fc3-dc95f9433721",
+        "learningMode": "HYBRID",
+        "message": "This is an automated test enquiry verifying real PostgreSQL persistence.",
+        "status": "NEW",
+        "notes": null,
+        "followUpDate": null,
+        "consentGiven": true,
+        "source": "WEBSITE",
+        "createdAt": "2026-10-29T04:57:30.910Z",
+        "updatedAt": "2026-10-29T04:57:30.910Z"
+      },
+      {
+        "id": "c3a7ac75-31c7-4cd6-b30d-0c73c34d8dd6",
+        "enquiryNumber": "VL-ENQ-2026-1001",
+        "fullName": "Vikram Malhotra",
+        "email": "vikram.m@example.com",
+        "countryCode": "+91",
+        "phone": "9876501234",
+        "courseId": "74309622-7c7b-4760-8fc3-dc95f9433721",
+        "learningMode": "HYBRID",
+        "message": "I am working as a Python developer with 2 years of experience. I want to transition to applied AI and LLM application development. Can you share the upcoming weekend batch schedule?",
+        "status": "NEW",
+        "notes": "High intent applicant. Has solid Python basics. Needs details for November batch.",
+        "followUpDate": null,
+        "consentGiven": true,
+        "source": "WEBSITE",
+        "createdAt": "2026-10-29T03:09:10.889Z",
+        "updatedAt": "2026-10-29T05:09:10.895Z"
+      },
+      {
+        "id": "305c535f-762c-4b9a-aa34-ea06f99915d6",
+        "enquiryNumber": "VL-ENQ-2026-1002",
+        "fullName": "Ananya Sen",
+        "email": "ananya.sen@example.com",
+        "countryCode": "+91",
+        "phone": "9812345678",
+        "courseId": "7da671a0-91ba-4147-aebc-1feb04d769bd",
+        "learningMode": "HYBRID",
+        "message": "Interested in the Full Stack Web Engineering program. Are EMI installment options available for the course fee?",
+        "status": "CONTACTED",
+        "notes": "Contacted via phone. Shared EMI installment brochure and syllabus PDF. Awaiting response.",
+        "followUpDate": "2026-10-31T05:09:10.889Z",
+        "consentGiven": true,
+        "source": "WEBSITE",
+        "createdAt": "2026-10-28T05:09:10.889Z",
+        "updatedAt": "2026-10-29T05:09:10.897Z"
+      },
+      {
+        "id": "685ab3aa-f852-4a2c-bcc2-dba7c46a73c8",
+        "enquiryNumber": "VL-ENQ-2026-1003",
+        "fullName": "Rajesh Kulkarni",
+        "email": "rajesh.k@example.com",
+        "countryCode": "+91",
+        "phone": "9765432109",
+        "courseId": "b0484433-aced-4da9-910a-1f222098ba68",
+        "learningMode": "ONLINE",
+        "message": "Looking to upskill my team in Kubernetes and Terraform. Do you offer corporate training options or cohort enrollment for 4 engineers?",
+        "status": "INTERESTED",
+        "notes": "Corporate lead. 4 prospective students. Scheduled video consultation for Friday 4 PM.",
+        "followUpDate": "2026-10-30T05:09:10.889Z",
+        "consentGiven": true,
+        "source": "WEBSITE",
+        "createdAt": "2026-10-27T05:09:10.889Z",
+        "updatedAt": "2026-10-29T05:09:10.898Z"
+      },
+      {
+        "id": "a1b20042-0be9-41a8-8259-685fb01ac0e2",
+        "enquiryNumber": "VL-ENQ-2026-9224",
+        "fullName": "Integration Test Candidate",
+        "email": "test.candidate@example.com",
+        "countryCode": "+91",
+        "phone": "9876543210",
+        "courseId": "74309622-7c7b-4760-8fc3-dc95f9433721",
+        "learningMode": "HYBRID",
+        "message": "This is an automated test enquiry verifying real PostgreSQL persistence.",
+        "status": "NEW",
+        "notes": null,
+        "followUpDate": null,
+        "consentGiven": true,
+        "source": "WEBSITE",
+        "createdAt": "2026-10-29T05:10:40.614Z",
+        "updatedAt": "2026-10-29T05:10:40.614Z"
+      },
+      {
+        "id": "152b2ff1-6f4b-4549-a6a6-b8d9aacbd91e",
+        "enquiryNumber": "VL-ENQ-2026-9105",
+        "fullName": "Integration Test Candidate",
+        "email": "test.candidate@example.com",
+        "countryCode": "+91",
+        "phone": "9876543210",
+        "courseId": "74309622-7c7b-4760-8fc3-dc95f9433721",
+        "learningMode": "HYBRID",
+        "message": "This is an automated test enquiry verifying real PostgreSQL persistence.",
+        "status": "NEW",
+        "notes": null,
+        "followUpDate": null,
+        "consentGiven": true,
+        "source": "WEBSITE",
+        "createdAt": "2026-10-29T05:11:09.498Z",
+        "updatedAt": "2026-10-29T05:11:09.498Z"
+      },
+      {
+        "id": "7572f443-a72e-4d0d-9d1a-4d57735613f8",
+        "enquiryNumber": "VL-ENQ-2026-1823",
+        "fullName": "Integration Test Candidate",
+        "email": "test.candidate@example.com",
+        "countryCode": "+91",
+        "phone": "9876543210",
+        "courseId": "74309622-7c7b-4760-8fc3-dc95f9433721",
+        "learningMode": "HYBRID",
+        "message": "This is an automated test enquiry verifying real PostgreSQL persistence.",
+        "status": "NEW",
+        "notes": null,
+        "followUpDate": null,
+        "consentGiven": true,
+        "source": "WEBSITE",
+        "createdAt": "2026-10-29T05:11:33.446Z",
+        "updatedAt": "2026-10-29T05:11:33.446Z"
+      },
+      {
+        "id": "a443a9be-1daf-4bf0-a901-568785505334",
+        "enquiryNumber": "VL-ENQ-2026-9979",
+        "fullName": "Integration Test Candidate",
+        "email": "test.candidate@example.com",
+        "countryCode": "+91",
+        "phone": "9876543210",
+        "courseId": "74309622-7c7b-4760-8fc3-dc95f9433721",
+        "learningMode": "HYBRID",
+        "message": "This is an automated test enquiry verifying real PostgreSQL persistence.",
+        "status": "NEW",
+        "notes": null,
+        "followUpDate": null,
+        "consentGiven": true,
+        "source": "WEBSITE",
+        "createdAt": "2026-10-29T05:23:07.564Z",
+        "updatedAt": "2026-10-29T05:23:07.564Z"
+      },
+      {
+        "id": "014e5d68-407a-473d-b41d-13c534768f83",
+        "enquiryNumber": "VL-ENQ-2026-2505",
+        "fullName": "Integration Test Candidate",
+        "email": "test.candidate@example.com",
+        "countryCode": "+91",
+        "phone": "9876543210",
+        "courseId": "74309622-7c7b-4760-8fc3-dc95f9433721",
+        "learningMode": "HYBRID",
+        "message": "This is an automated test enquiry verifying real PostgreSQL persistence.",
+        "status": "NEW",
+        "notes": null,
+        "followUpDate": null,
+        "consentGiven": true,
+        "source": "WEBSITE",
+        "createdAt": "2026-10-29T06:05:33.998Z",
+        "updatedAt": "2026-10-29T06:05:33.998Z"
+      },
+      {
+        "id": "630fe4c1-3013-4c02-9f69-41c8de8c5d38",
+        "enquiryNumber": "VL-ENQ-2026-5919",
+        "fullName": "Integration Test Candidate",
+        "email": "test.candidate@example.com",
+        "countryCode": "+91",
+        "phone": "9876543210",
+        "courseId": "74309622-7c7b-4760-8fc3-dc95f9433721",
+        "learningMode": "HYBRID",
+        "message": "This is an automated test enquiry verifying real PostgreSQL persistence.",
+        "status": "NEW",
+        "notes": null,
+        "followUpDate": null,
+        "consentGiven": true,
+        "source": "WEBSITE",
+        "createdAt": "2026-10-29T06:06:15.574Z",
+        "updatedAt": "2026-10-29T06:06:15.574Z"
+      },
+      {
+        "id": "faf96131-521c-4cb6-888d-90da4856f9ad",
+        "enquiryNumber": "VL-ENQ-2026-4018",
+        "fullName": "Integration Test Candidate",
+        "email": "test.candidate@example.com",
+        "countryCode": "+91",
+        "phone": "9876543210",
+        "courseId": "74309622-7c7b-4760-8fc3-dc95f9433721",
+        "learningMode": "HYBRID",
+        "message": "This is an automated test enquiry verifying real PostgreSQL persistence.",
+        "status": "NEW",
+        "notes": null,
+        "followUpDate": null,
+        "consentGiven": true,
+        "source": "WEBSITE",
+        "createdAt": "2026-10-29T06:22:12.853Z",
+        "updatedAt": "2026-10-29T06:22:12.853Z"
+      },
+      {
+        "id": "bd49a912-9ec7-416b-a02b-6168b22f72f6",
+        "enquiryNumber": "VL-ENQ-2026-6878",
+        "fullName": "Integration Test Candidate",
+        "email": "test.candidate@example.com",
+        "countryCode": "+91",
+        "phone": "9876543210",
+        "courseId": "74309622-7c7b-4760-8fc3-dc95f9433721",
+        "learningMode": "HYBRID",
+        "message": "This is an automated test enquiry verifying real PostgreSQL persistence.",
+        "status": "NEW",
+        "notes": null,
+        "followUpDate": null,
+        "consentGiven": true,
+        "source": "WEBSITE",
+        "createdAt": "2026-10-29T06:47:49.712Z",
+        "updatedAt": "2026-10-29T06:47:49.712Z"
+      },
+      {
+        "id": "e5cbe860-7faa-4d86-85d7-5c2f431b6861",
+        "enquiryNumber": "VL-ENQ-2026-4071",
+        "fullName": "Integration Test Candidate",
+        "email": "test.candidate@example.com",
+        "countryCode": "+91",
+        "phone": "9876543210",
+        "courseId": "74309622-7c7b-4760-8fc3-dc95f9433721",
+        "learningMode": "HYBRID",
+        "message": "This is an automated test enquiry verifying real PostgreSQL persistence.",
+        "status": "NEW",
+        "notes": null,
+        "followUpDate": null,
+        "consentGiven": true,
+        "source": "WEBSITE",
+        "createdAt": "2026-10-29T06:32:12.317Z",
+        "updatedAt": "2026-10-29T06:32:12.317Z"
+      },
+      {
+        "id": "cd07067e-2f9f-411f-b837-0cc9009a47d9",
+        "enquiryNumber": "VL-ENQ-2026-2655",
+        "fullName": "Integration Test Candidate",
+        "email": "test.candidate@example.com",
+        "countryCode": "+91",
+        "phone": "9876543210",
+        "courseId": "74309622-7c7b-4760-8fc3-dc95f9433721",
+        "learningMode": "HYBRID",
+        "message": "This is an automated test enquiry verifying real PostgreSQL persistence.",
+        "status": "NEW",
+        "notes": null,
+        "followUpDate": null,
+        "consentGiven": true,
+        "source": "WEBSITE",
+        "createdAt": "2026-10-29T07:04:46.308Z",
+        "updatedAt": "2026-10-29T07:04:46.308Z"
+      },
+      {
+        "id": "e42180f3-da3f-4bdc-a98c-601c0ad172fe",
+        "enquiryNumber": "VL-ENQ-2026-7703",
+        "fullName": "Integration Test Candidate",
+        "email": "test.candidate@example.com",
+        "countryCode": "+91",
+        "phone": "9876543210",
+        "courseId": "74309622-7c7b-4760-8fc3-dc95f9433721",
+        "learningMode": "HYBRID",
+        "message": "This is an automated test enquiry verifying real PostgreSQL persistence.",
+        "status": "NEW",
+        "notes": null,
+        "followUpDate": null,
+        "consentGiven": true,
+        "source": "WEBSITE",
+        "createdAt": "2026-10-29T07:03:55.126Z",
+        "updatedAt": "2026-10-29T07:03:55.126Z"
+      },
+      {
+        "id": "237e3ac9-2ccc-414b-9dc8-c9ddd50ac9d4",
+        "enquiryNumber": "VL-ENQ-2026-5250",
+        "fullName": "S.V.Hari Siva Balan",
+        "email": "harisivabalan2006@gmail.com",
+        "countryCode": "+91",
+        "phone": "9042782559",
+        "courseId": "7da671a0-91ba-4147-aebc-1feb04d769bd",
+        "learningMode": "IN_PERSON",
+        "message": "eryterretr",
+        "status": "CONTACTED",
+        "notes": null,
+        "followUpDate": null,
+        "consentGiven": true,
+        "source": "WEBSITE",
+        "createdAt": "2026-10-29T07:14:40.348Z",
+        "updatedAt": "2026-10-29T07:16:07.593Z"
+      },
+      {
+        "id": "cda6a478-0ff0-453a-8820-1bb15cddc29d",
+        "enquiryNumber": "VL-ENQ-2026-3704",
+        "fullName": "Integration Test Candidate",
+        "email": "test.candidate@example.com",
+        "countryCode": "+91",
+        "phone": "9876543210",
+        "courseId": "74309622-7c7b-4760-8fc3-dc95f9433721",
+        "learningMode": "HYBRID",
+        "message": "This is an automated test enquiry verifying real PostgreSQL persistence.",
+        "status": "NEW",
+        "notes": null,
+        "followUpDate": null,
+        "consentGiven": true,
+        "source": "WEBSITE",
+        "createdAt": "2026-10-29T07:26:59.701Z",
+        "updatedAt": "2026-10-29T07:26:59.701Z"
+      },
+      {
+        "id": "b63e3485-e2dd-40f6-915e-998fbc09e449",
+        "enquiryNumber": "VL-ENQ-CRM-0894",
+        "fullName": "CRM Test Student",
+        "email": "crm.student@example.com",
+        "countryCode": "+91",
+        "phone": "9876543210",
+        "courseId": null,
+        "learningMode": null,
+        "message": "Looking for detailed batch consultation and EMI options.",
+        "status": "CONTACTED",
+        "notes": "Private note: Spoke with student. Scheduled follow-up consultation.",
+        "followUpDate": "2026-11-01T07:27:00.968Z",
+        "consentGiven": true,
+        "source": "WEBSITE",
+        "createdAt": "2026-10-29T07:27:00.896Z",
+        "updatedAt": "2026-10-29T07:27:00.987Z"
+      },
+      {
+        "id": "13139fc2-3c53-4c7e-a27f-e2dae11c8b83",
+        "enquiryNumber": "VL-ENQ-2026-8614",
+        "fullName": "Integration Test Candidate",
+        "email": "test.candidate@example.com",
+        "countryCode": "+91",
+        "phone": "9876543210",
+        "courseId": "74309622-7c7b-4760-8fc3-dc95f9433721",
+        "learningMode": "HYBRID",
+        "message": "This is an automated test enquiry verifying real PostgreSQL persistence.",
+        "status": "NEW",
+        "notes": null,
+        "followUpDate": null,
+        "consentGiven": true,
+        "source": "WEBSITE",
+        "createdAt": "2026-10-29T07:28:08.881Z",
+        "updatedAt": "2026-10-29T07:28:08.881Z"
+      },
+      {
+        "id": "0c5c14d7-ec3c-4ae7-aefc-f3e249803191",
+        "enquiryNumber": "VL-ENQ-2026-8908",
+        "fullName": "Resend Verification Student",
+        "email": "harisivabalan2006@gmail.com",
+        "countryCode": "+91",
+        "phone": "9876543210",
+        "courseId": "74309622-7c7b-4760-8fc3-dc95f9433721",
+        "learningMode": "HYBRID",
+        "message": "Testing real-time Resend notification delivery to admin email.",
+        "status": "CONTACTED",
+        "notes": null,
+        "followUpDate": null,
+        "consentGiven": true,
+        "source": "WEBSITE",
+        "createdAt": "2026-10-29T07:29:19.041Z",
+        "updatedAt": "2026-10-29T07:31:37.705Z"
+      }
+    ],
+    "enquiryMessages": [
+      {
+        "id": "01071a3f-21a1-4841-bf2e-7dca4e4bd69d",
+        "enquiryId": "237e3ac9-2ccc-414b-9dc8-c9ddd50ac9d4",
+        "senderRole": "ADMIN",
+        "senderEmail": "admin@vlearnn.com",
+        "recipientEmail": "harisivabalan2006@gmail.com",
+        "subject": "Re: Admissions Enquiry [VL-ENQ-2026-5250] - VLEARNN Institute",
+        "body": "okserrewerw",
+        "channel": "EMAIL",
+        "status": "SENT",
+        "providerMessageId": null,
+        "createdAt": "2026-10-29T07:16:07.586Z"
+      },
+      {
+        "id": "758d53de-b39a-4e61-a52c-b01e3b9e4ad5",
+        "enquiryId": "b63e3485-e2dd-40f6-915e-998fbc09e449",
+        "senderRole": "ADMIN",
+        "senderEmail": "admin@vlearnn.com",
+        "recipientEmail": "crm.student@example.com",
+        "subject": "VLEARNN Admissions Follow-up",
+        "body": "Hello! We have reviewed your request and would like to invite you for a 1-on-1 counseling call.",
+        "channel": "EMAIL",
+        "status": "FAILED",
+        "providerMessageId": null,
+        "createdAt": "2026-10-29T07:27:01.358Z"
+      },
+      {
+        "id": "5e6e51fc-d972-4801-9070-1410bf5d31c9",
+        "enquiryId": "0c5c14d7-ec3c-4ae7-aefc-f3e249803191",
+        "senderRole": "ADMIN",
+        "senderEmail": "admin@vlearnn.com",
+        "recipientEmail": "resend.test@example.com",
+        "subject": "Admissions Consultation",
+        "body": "Hello Student, we received your enquiry.",
+        "channel": "EMAIL",
+        "status": "FAILED",
+        "providerMessageId": null,
+        "createdAt": "2026-10-29T07:31:06.498Z"
+      },
+      {
+        "id": "24dbcbd4-c871-4367-b869-89d4c76b2999",
+        "enquiryId": "0c5c14d7-ec3c-4ae7-aefc-f3e249803191",
+        "senderRole": "ADMIN",
+        "senderEmail": "admin@vlearnn.com",
+        "recipientEmail": "harisivabalan2006@gmail.com",
+        "subject": "Official Admissions Consultation Invitation",
+        "body": "Dear Student, thank you for your enquiry. We would love to schedule a counseling session.",
+        "channel": "EMAIL",
+        "status": "SENT",
+        "providerMessageId": "01a18692-514c-7cd4-9555-442dc9d49807",
+        "createdAt": "2026-10-29T07:31:37.698Z"
+      },
+      {
+        "id": "19d9274c-0a60-451d-ac30-acba04ef5158",
+        "enquiryId": "237e3ac9-2ccc-414b-9dc8-c9ddd50ac9d4",
+        "senderRole": "ADMIN",
+        "senderEmail": "admin@vlearnn.com",
+        "recipientEmail": "harisivabalan2006@gmail.com",
+        "subject": "Re: Admissions Enquiry [VL-ENQ-2026-5250] - VLEARNN Institute",
+        "body": "ok thanks for that",
+        "channel": "EMAIL",
+        "status": "SENT",
+        "providerMessageId": "01a18694-d09f-78bd-9bcf-d4d5ae0d56a1",
+        "createdAt": "2026-10-29T07:34:21.315Z"
+      }
+    ],
+    "emailNotifications": [
+      {
+        "id": "27a1ef0f-501e-4362-81d7-3f1fe6199425",
+        "enquiryId": "d955aac2-4614-4e1a-a4ec-80e1507e921b",
+        "recipient": "admin@vlearnn.com",
+        "subject": "[New VLEARNN Enquiry] VL-ENQ-2026-7841 - Integration Test Candidate (Applied Artificial Intelligence & Large Language Models)",
+        "status": "SENT",
+        "providerMessageId": null,
+        "errorMessage": null,
+        "createdAt": "2026-10-29T04:32:24.992Z"
+      },
+      {
+        "id": "a59e1a86-caea-42c5-9532-e57d2e49e72a",
+        "enquiryId": "db74a188-4d0d-40bd-9d65-9738cc9e91b6",
+        "recipient": "admin@vlearnn.com",
+        "subject": "[New VLEARNN Enquiry] VL-ENQ-2026-2003 - Integration Test Candidate (Applied Artificial Intelligence & Large Language Models)",
+        "status": "SENT",
+        "providerMessageId": null,
+        "errorMessage": null,
+        "createdAt": "2026-10-29T04:40:21.551Z"
+      },
+      {
+        "id": "a9a2a118-dcb1-480a-bab9-ba9422922875",
+        "enquiryId": "fffce214-f1bb-4920-97ec-1223d47f7077",
+        "recipient": "admin@vlearnn.com",
+        "subject": "[New VLEARNN Enquiry] VL-ENQ-2026-7937 - Integration Test Candidate (Applied Artificial Intelligence & Large Language Models)",
+        "status": "SENT",
+        "providerMessageId": null,
+        "errorMessage": null,
+        "createdAt": "2026-10-29T04:57:31.534Z"
+      },
+      {
+        "id": "71f397d0-692c-4c6e-946d-2dc1ccca9a0d",
+        "enquiryId": "a1b20042-0be9-41a8-8259-685fb01ac0e2",
+        "recipient": "admin@vlearnn.com",
+        "subject": "[New VLEARNN Enquiry] VL-ENQ-2026-9224 - Integration Test Candidate (Applied Artificial Intelligence & Large Language Models)",
+        "status": "SENT",
+        "providerMessageId": null,
+        "errorMessage": null,
+        "createdAt": "2026-10-29T05:10:41.407Z"
+      },
+      {
+        "id": "fe10b891-c630-440c-9c59-2a5ad765c759",
+        "enquiryId": "152b2ff1-6f4b-4549-a6a6-b8d9aacbd91e",
+        "recipient": "admin@vlearnn.com",
+        "subject": "[New VLEARNN Enquiry] VL-ENQ-2026-9105 - Integration Test Candidate (Applied Artificial Intelligence & Large Language Models)",
+        "status": "SENT",
+        "providerMessageId": null,
+        "errorMessage": null,
+        "createdAt": "2026-10-29T05:11:10.199Z"
+      },
+      {
+        "id": "d05688b7-051a-42a3-84dd-3c7b1083025a",
+        "enquiryId": "7572f443-a72e-4d0d-9d1a-4d57735613f8",
+        "recipient": "admin@vlearnn.com",
+        "subject": "[New VLEARNN Enquiry] VL-ENQ-2026-1823 - Integration Test Candidate (Applied Artificial Intelligence & Large Language Models)",
+        "status": "SENT",
+        "providerMessageId": null,
+        "errorMessage": null,
+        "createdAt": "2026-10-29T05:11:34.116Z"
+      },
+      {
+        "id": "895265ce-6e56-4c48-9b22-e3359312fa7a",
+        "enquiryId": "a443a9be-1daf-4bf0-a901-568785505334",
+        "recipient": "admin@vlearnn.com",
+        "subject": "[New VLEARNN Enquiry] VL-ENQ-2026-9979 - Integration Test Candidate (Applied Artificial Intelligence & Large Language Models)",
+        "status": "SENT",
+        "providerMessageId": null,
+        "errorMessage": null,
+        "createdAt": "2026-10-29T05:23:08.346Z"
+      },
+      {
+        "id": "d620ff52-82a6-4cd9-8ab1-2fd16f80e58c",
+        "enquiryId": "014e5d68-407a-473d-b41d-13c534768f83",
+        "recipient": "admin@vlearnn.com",
+        "subject": "[New VLEARNN Enquiry] VL-ENQ-2026-2505 - Integration Test Candidate (Applied Artificial Intelligence & Large Language Models)",
+        "status": "SENT",
+        "providerMessageId": null,
+        "errorMessage": null,
+        "createdAt": "2026-10-29T06:05:34.728Z"
+      },
+      {
+        "id": "ed17c6f8-4146-4261-9822-646fef066898",
+        "enquiryId": "630fe4c1-3013-4c02-9f69-41c8de8c5d38",
+        "recipient": "admin@vlearnn.com",
+        "subject": "[New VLEARNN Enquiry] VL-ENQ-2026-5919 - Integration Test Candidate (Applied Artificial Intelligence & Large Language Models)",
+        "status": "SENT",
+        "providerMessageId": null,
+        "errorMessage": null,
+        "createdAt": "2026-10-29T06:06:16.057Z"
+      },
+      {
+        "id": "2005121e-13b5-43a7-88eb-17c4f638ea34",
+        "enquiryId": "faf96131-521c-4cb6-888d-90da4856f9ad",
+        "recipient": "admin@vlearnn.com",
+        "subject": "[New VLEARNN Enquiry] VL-ENQ-2026-4018 - Integration Test Candidate (Applied Artificial Intelligence & Large Language Models)",
+        "status": "SENT",
+        "providerMessageId": null,
+        "errorMessage": null,
+        "createdAt": "2026-10-29T06:22:14.863Z"
+      },
+      {
+        "id": "284eacbc-8e87-40d6-9d7d-a93f8ebd1fae",
+        "enquiryId": "e5cbe860-7faa-4d86-85d7-5c2f431b6861",
+        "recipient": "admin@vlearnn.com",
+        "subject": "[New VLEARNN Enquiry] VL-ENQ-2026-4071 - Integration Test Candidate (Applied Artificial Intelligence & Large Language Models)",
+        "status": "SENT",
+        "providerMessageId": null,
+        "errorMessage": null,
+        "createdAt": "2026-10-29T06:32:13.058Z"
+      },
+      {
+        "id": "b97f3ef2-cc57-4543-93f4-5e7d83d0f6bb",
+        "enquiryId": "bd49a912-9ec7-416b-a02b-6168b22f72f6",
+        "recipient": "admin@vlearnn.com",
+        "subject": "[New VLEARNN Enquiry] VL-ENQ-2026-6878 - Integration Test Candidate (Applied Artificial Intelligence & Large Language Models)",
+        "status": "SENT",
+        "providerMessageId": null,
+        "errorMessage": null,
+        "createdAt": "2026-10-29T06:47:50.575Z"
+      },
+      {
+        "id": "173ea273-b37f-4d55-985e-0446e93be558",
+        "enquiryId": "e42180f3-da3f-4bdc-a98c-601c0ad172fe",
+        "recipient": "admin@vlearnn.com",
+        "subject": "[New VLEARNN Enquiry] VL-ENQ-2026-7703 - Integration Test Candidate (Applied Artificial Intelligence & Large Language Models)",
+        "status": "SENT",
+        "providerMessageId": null,
+        "errorMessage": null,
+        "createdAt": "2026-10-29T07:03:55.891Z"
+      },
+      {
+        "id": "8318eac5-e66c-4420-87cb-61ba5dfbdc1d",
+        "enquiryId": "cd07067e-2f9f-411f-b837-0cc9009a47d9",
+        "recipient": "admin@vlearnn.com",
+        "subject": "[New VLEARNN Enquiry] VL-ENQ-2026-2655 - Integration Test Candidate (Applied Artificial Intelligence & Large Language Models)",
+        "status": "SENT",
+        "providerMessageId": null,
+        "errorMessage": null,
+        "createdAt": "2026-10-29T07:04:47.206Z"
+      },
+      {
+        "id": "39298566-41b0-481d-875f-801a00080ae5",
+        "enquiryId": "237e3ac9-2ccc-414b-9dc8-c9ddd50ac9d4",
+        "recipient": "admin@vlearnn.com",
+        "subject": "[New VLEARNN Enquiry] VL-ENQ-2026-5250 - S.V.Hari Siva Balan (Full Stack Web Engineering with Next.js & Node.js)",
+        "status": "SENT",
+        "providerMessageId": null,
+        "errorMessage": null,
+        "createdAt": "2026-10-29T07:14:41.076Z"
+      },
+      {
+        "id": "45e35bc2-8bd3-4ff1-8a19-ea368ceb662f",
+        "enquiryId": "cda6a478-0ff0-453a-8820-1bb15cddc29d",
+        "recipient": "harisivabalan2006@gmail.com",
+        "subject": "[New VLEARNN Enquiry] VL-ENQ-2026-3704 - Integration Test Candidate (Applied Artificial Intelligence & Large Language Models)",
+        "status": "SENT",
+        "providerMessageId": "01a1868e-166c-74ff-a0e7-e05ab12b4155",
+        "errorMessage": null,
+        "createdAt": "2026-10-29T07:27:00.512Z"
+      },
+      {
+        "id": "ea21c429-eae1-42c2-a745-01a27ecf030f",
+        "enquiryId": "13139fc2-3c53-4c7e-a27f-e2dae11c8b83",
+        "recipient": "harisivabalan2006@gmail.com",
+        "subject": "[New VLEARNN Enquiry] VL-ENQ-2026-8614 - Integration Test Candidate (Applied Artificial Intelligence & Large Language Models)",
+        "status": "SENT",
+        "providerMessageId": "01a1868f-2569-738e-88d7-9721ab0fd7ff",
+        "errorMessage": null,
+        "createdAt": "2026-10-29T07:28:09.895Z"
+      },
+      {
+        "id": "69cddee6-a2dd-4746-983f-910186709cee",
+        "enquiryId": "0c5c14d7-ec3c-4ae7-aefc-f3e249803191",
+        "recipient": "harisivabalan2006@gmail.com",
+        "subject": "[New VLEARNN Enquiry] VL-ENQ-2026-8908 - Resend Verification Student (Applied Artificial Intelligence & Large Language Models)",
+        "status": "SENT",
+        "providerMessageId": "01a18690-365e-78e0-bd05-c4453f21176c",
+        "errorMessage": null,
+        "createdAt": "2026-10-29T07:29:19.670Z"
+      }
+    ]
+  }
+}

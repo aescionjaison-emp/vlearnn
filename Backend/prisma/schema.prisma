@@ -1,0 +1,246 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum Role {
+  SUPER_ADMIN
+  ADMIN
+  EDITOR
+}
+
+enum LearningMode {
+  ONLINE
+  HYBRID
+  IN_PERSON
+  WEEKEND_BOOTCAMP
+}
+
+enum EnquiryStatus {
+  NEW
+  CONTACTED
+  FOLLOW_UP
+  INTERESTED
+  ENROLLED
+  CLOSED
+}
+
+enum MessageChannel {
+  EMAIL
+  WHATSAPP_LOG
+  SYSTEM
+}
+
+enum MessageStatus {
+  SENT
+  FAILED
+  SKIPPED
+}
+
+model AdminUser {
+  id           String    @id @default(uuid())
+  email        String    @unique
+  passwordHash String
+  name         String
+  role         Role      @default(ADMIN)
+  lastLoginAt  DateTime?
+  isActive     Boolean   @default(true)
+  createdAt    DateTime  @default(now())
+  updatedAt    DateTime  @updatedAt
+
+  @@map("admin_users")
+}
+
+model CourseCategory {
+  id           String   @id @default(uuid())
+  name         String   @unique
+  slug         String   @unique
+  description  String?
+  displayOrder Int      @default(0)
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+  courses      Course[]
+
+  @@map("course_categories")
+}
+
+model Course {
+  id           String         @id @default(uuid())
+  title        String
+  slug         String         @unique
+  summary      String
+  description  String
+  categoryId   String
+  category     CourseCategory @relation(fields: [categoryId], references: [id], onDelete: Restrict)
+  duration     String
+  learningMode LearningMode   @default(HYBRID)
+  fees         Int?
+  isFeatured   Boolean        @default(false)
+  isPublished  Boolean        @default(true)
+  isArchived   Boolean        @default(false)
+  eligibility  String?
+  displayOrder Int            @default(0)
+  createdAt    DateTime       @default(now())
+  updatedAt    DateTime       @updatedAt
+
+  modules   CourseModule[]
+  enquiries Enquiry[]
+
+  @@index([slug])
+  @@index([categoryId])
+  @@index([isPublished, isArchived])
+  @@map("courses")
+}
+
+model CourseModule {
+  id            String   @id @default(uuid())
+  courseId      String
+  course        Course   @relation(fields: [courseId], references: [id], onDelete: Cascade)
+  title         String
+  description   String?
+  topics        String[]
+  orderIndex    Int      @default(0)
+  durationHours Int?
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+
+  @@index([courseId, orderIndex])
+  @@map("course_modules")
+}
+
+model Enquiry {
+  id            String        @id @default(uuid())
+  enquiryNumber String        @unique // e.g. "VL-ENQ-2026-1001"
+  fullName      String
+  email         String
+  countryCode   String        @default("+91")
+  phone         String
+  courseId      String?
+  course        Course?       @relation(fields: [courseId], references: [id], onDelete: SetNull)
+  learningMode  LearningMode?
+  message       String
+  status        EnquiryStatus @default(NEW)
+  notes         String?       // Private internal notes
+  followUpDate  DateTime?
+  consentGiven  Boolean       @default(true)
+  source        String        @default("WEBSITE")
+  createdAt     DateTime      @default(now())
+  updatedAt     DateTime      @updatedAt
+
+  messages           EnquiryMessage[]
+  emailNotifications EmailNotification[]
+
+  @@index([status])
+  @@index([email])
+  @@index([phone])
+  @@index([courseId])
+  @@index([createdAt])
+  @@map("enquiries")
+}
+
+model EnquiryMessage {
+  id                String         @id @default(uuid())
+  enquiryId         String
+  enquiry           Enquiry        @relation(fields: [enquiryId], references: [id], onDelete: Cascade)
+  senderRole        String         @default("ADMIN")
+  senderEmail       String
+  recipientEmail    String
+  subject           String
+  body              String
+  channel           MessageChannel @default(EMAIL)
+  status            MessageStatus  @default(SENT)
+  providerMessageId String?
+  createdAt         DateTime       @default(now())
+
+  @@index([enquiryId])
+  @@map("enquiry_messages")
+}
+
+model EmailNotification {
+  id                String        @id @default(uuid())
+  enquiryId         String
+  enquiry           Enquiry       @relation(fields: [enquiryId], references: [id], onDelete: Cascade)
+  recipient         String
+  subject           String
+  status            MessageStatus @default(SENT)
+  providerMessageId String?
+  errorMessage      String?
+  createdAt         DateTime      @default(now())
+
+  @@index([enquiryId])
+  @@map("email_notifications")
+}
+
+model SiteSettings {
+  id              String   @id @default("default")
+  instituteName   String   @default("VLEARNN")
+  tagLine         String   @default("Practical IT & Advanced Technical Training")
+  heroTitle       String   @default("Master Real-World IT Engineering with Industry Practitioners")
+  heroSubtitle    String   @default("Cohort-based, production-grade training in Artificial Intelligence, Full Stack Engineering, Cloud DevOps, and Data Systems. Designed for ambitious professionals and engineers.")
+  aboutStory      String   @default("VLEARNN was founded by seasoned software architects and engineering leaders with a clear mission: bridge the gap between theoretical classroom learning and high-stakes production engineering.")
+  mission         String   @default("To empower learners with authentic, hands-on technical skills, production mental models, and career-defining competencies.")
+  vision          String   @default("To become the gold standard in industry-integrated technical education across emerging technologies.")
+  address         String   @default("VLEARNN Tech Campus, Level 4, Innovation Square, Tech Corridor, Bangalore 560103, India")
+  phone           String   @default("+91 98765 43210")
+  email           String   @default("admissions@vlearnn.com")
+  whatsappNumber  String   @default("+919876543210")
+  facebookUrl     String?  @default("https://facebook.com/vlearnn")
+  linkedinUrl     String?  @default("https://linkedin.com/company/vlearnn")
+  twitterUrl      String?  @default("https://twitter.com/vlearnn")
+  githubUrl       String?  @default("https://github.com/vlearnn")
+  updatedAt       DateTime @updatedAt
+
+  @@map("site_settings")
+}
+
+model FAQ {
+  id           String   @id @default(uuid())
+  question     String
+  answer       String
+  category     String   @default("General")
+  displayOrder Int      @default(0)
+  isPublished  Boolean  @default(true)
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+
+  @@index([isPublished, displayOrder])
+  @@map("faqs")
+}
+
+model Testimonial {
+  id           String   @id @default(uuid())
+  studentName  String
+  courseName   String
+  role         String
+  company      String
+  quote        String
+  rating       Int      @default(5)
+  isPublished  Boolean  @default(true)
+  displayOrder Int      @default(0)
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+
+  @@index([isPublished, displayOrder])
+  @@map("testimonials")
+}
+
+model FacultyProfile {
+  id              String   @id @default(uuid())
+  name            String
+  title           String
+  bio             String
+  expertise       String[]
+  yearsExperience Int
+  displayOrder    Int      @default(0)
+  isPublished     Boolean  @default(true)
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+
+  @@index([isPublished, displayOrder])
+  @@map("faculty_profiles")
+}
+
